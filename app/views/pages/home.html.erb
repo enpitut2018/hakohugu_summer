@@ -1,0 +1,48 @@
+<form action="/pages/home" method="get">
+  <div class="field">
+    <% %w(掃除 英語の勉強 ランニング).each.with_index do |list,i| %>
+      <%if @todo
+      flag=0
+      @todo.each do |j|
+        if j==list
+          flag=1
+          break
+        end
+      end
+
+      if flag==1%>
+        <%=check_box_tag 'todo[]',list ,{:checked => true},id:"samurai_ingredients_#{i}"%>
+      <%else%>
+        <%= check_box_tag 'todo[]',list ,false,id:"samurai_ingredients_#{i}"%>
+      <%end%>
+    <% else%>
+      <%= check_box_tag 'todo[]',list ,false,id:"samurai_ingredients_#{i}"%>
+    <%end%>
+
+    <label>
+
+      <%= list %>
+      <br>
+    </label>
+    <% end %>
+  </div>
+  <%=@todo%>
+  <input type="submit" id="sub"   value="決定">
+</form>
+
+<script>
+ window.onload = function(){
+   setTimeout("syori()", 3000);
+ }
+
+ function syori(){
+   var x;
+   x = document.getElementById("sub");
+
+   x.disabled = "";
+ }
+ var x;
+ x = document.getElementById("sub");
+
+ x.disabled = "disabled";
+</script>
