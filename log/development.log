@@ -2703,3 +2703,542 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 23ms (Views: 15.5ms)
 
 
+Started GET "/pages/home?todo%5B%5D=%E6%8E%83%E9%99%A4&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-24 07:07:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["掃除", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 24.0ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E6%8E%83%E9%99%A4&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-24 07:08:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["掃除", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 17.3ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:08:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 18.1ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:11:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 18.4ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:12:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 18.4ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:12:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 20.0ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:15:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 19.0ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:15:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 37.6ms)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2018-07-24 07:15:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:27:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 18.9ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:27:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 20.7ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:44:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 22.7ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:44:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 21.9ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-24 07:44:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 22.6ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-24 07:46:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 16.5ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-24 07:46:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 19.5ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:46:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 23.5ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:46:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 22.5ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:46:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 24.0ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:47:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 16.3ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:47:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 21.9ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:47:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 21.7ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:48:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 20.1ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:48:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 23.9ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:48:38 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 27.8ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:48:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 20.0ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:49:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 17.7ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:49:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 20.1ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:50:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 15.6ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:51:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 26.8ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:52:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 23.6ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:52:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 38ms (Views: 26.7ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:52:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 23.0ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:53:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 24.3ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 07:55:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 23.2ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-24 07:55:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 19.9ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-24 07:55:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 23.9ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-24 07:56:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 33ms (Views: 22.9ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-24 08:02:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 24.5ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-24 08:03:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 22.6ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-24 08:03:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 26ms (Views: 18.4ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-24 08:03:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 29ms (Views: 19.6ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-25 01:15:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 268ms (Views: 41.4ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-25 01:19:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 46ms (Views: 29.3ms)
+
+
+Started GET "/pages/home" for 172.18.0.1 at 2018-07-25 01:19:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 23.4ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-25 01:19:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 18.4ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-25 01:19:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 17.0ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92" for 172.18.0.1 at 2018-07-25 01:19:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 22.8ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-25 01:19:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 20.2ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-25 01:20:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 23.3ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7" for 172.18.0.1 at 2018-07-25 01:20:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 26.4ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-25 01:20:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 26.4ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-25 01:20:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 26.3ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-25 01:20:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 21.8ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-25 01:20:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 25.5ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-25 01:20:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 18.2ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-25 01:20:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 27.4ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-25 01:20:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 30ms (Views: 21.7ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-25 01:20:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 33ms (Views: 21.4ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-25 01:20:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 28ms (Views: 20.2ms)
+
+
+Started GET "/pages/home?todo%5B%5D=%E3%83%90%E3%83%B3%E3%83%89%E3%81%AE%E7%B7%B4%E7%BF%92&todo%5B%5D=%E8%8B%B1%E8%AA%9E%E3%81%AE%E5%8B%89%E5%BC%B7&todo%5B%5D=%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0" for 172.18.0.1 at 2018-07-25 01:22:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Parameters: {"todo"=>["バンドの練習", "英語の勉強", "ランニング"]}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 18.7ms)
+
+

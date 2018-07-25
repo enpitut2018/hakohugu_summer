@@ -1,6 +1,8 @@
+<h1>CoMony</h1>
+<h3>ToDoリスト</h3>
 <form action="/pages/home" method="get">
   <div class="field">
-    <% %w(掃除 英語の勉強 ランニング).each.with_index do |list,i| %>
+    <% %w(バンドの練習 英語の勉強 ランニング).each.with_index do |list,i| %>
       <%if @todo
       flag=0
       @todo.each do |j|
@@ -26,23 +28,74 @@
     </label>
     <% end %>
   </div>
-  <%=@todo%>
-  <input type="submit" id="sub"   value="決定">
+  <%#= @todo%>
+  <input type="submit" id="sub"   value="更新">
 </form>
 
+<%# /* function syori(){
+*   var x;
+*   x = document.getElementById("sub");
+
+*   x.disabled = "";
+* }
+* var x;
+* x = document.getElementById("sub");
+
+* x.disabled = "disabled";*/ %>
+
+
 <script>
- window.onload = function(){
-   setTimeout("syori()", 3000);
+ window.onload=getPosition();
+ // Geolocation APIに対応している
+ if (navigator.geolocation) {
+   /* alert("この端末では位置情報が取得できます");*/
+   // Geolocation APIに対応していない
+ } else {
+   alert("この端末では位置情報が取得できません");
  }
 
- function syori(){
-   var x;
-   x = document.getElementById("sub");
+ // 現在地取得処理
+ function getPosition() {
+   // 現在地を取得
+   navigator.geolocation.getCurrentPosition(
+     // 取得成功した場合
+     function(position) {
+       alert('緯度'+position.coords.latitude +'経度'+ position.coords.longitude);
+       var x=position.coords.latitude;
+       var y=position.coords.longitude;
+       var xd=0.110189399999996;
+       var yd=0.100774;
+       /* var xd=36.110189399999996;
+        * var yd=140.100774;*/
+       if(x-xd <1 && x-xd >-1 && y-yd <1 && y-yd >-1){
+         var x;
+         x = document.getElementById("sub");
+         x.disabled = "";
+       }
+       else{
+         var x;
+         x = document.getElementById("sub");
+         x.disabled = "disabled";
+       }
 
-   x.disabled = "";
+     },
+     // 取得失敗した場合
+     function(error) {
+       switch(error.code) {
+         case 1: //PERMISSION_DENIED
+           alert("位置情報の利用が許可されていません");
+           break;
+         case 2: //POSITION_UNAVAILABLE
+           alert("現在位置が取得できませんでした");
+           break;
+         case 3: //TIMEOUT
+           alert("タイムアウトになりました");
+           break;
+         default:
+           alert("その他のエラー(エラーコード:"+error.code+")");
+           break;
+       }
+     }
+   );
  }
- var x;
- x = document.getElementById("sub");
-
- x.disabled = "disabled";
 </script>
