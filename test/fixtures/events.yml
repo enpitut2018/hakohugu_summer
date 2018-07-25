@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  schedule: 2018-07-25 04:13:27
+  place: MyString
+  caption: MyText
+  member_n: 1
+  category: one
+
+two:
+  title: MyString
+  schedule: 2018-07-25 04:13:27
+  place: MyString
+  caption: MyText
+  member_n: 1
+  category: two
