@@ -80,7 +80,7 @@
 
        // 前回の書き出しから3秒以上経過していたら描写
        // 毎回HTMLに書き出していると、ブラウザがフリーズするため
-       if( (syncerWatchPosition.lastTime + 1) > nowTime )
+       if( (syncerWatchPosition.lastTime + 0.5) > nowTime )
 	     {
 	       return false ;
 	     }
