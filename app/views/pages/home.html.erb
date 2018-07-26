@@ -1,6 +1,8 @@
+<h1>CoMony</h1>
+<h3>ToDoリスト</h3>
 <form action="/pages/home" method="get">
   <div class="field">
-    <% %w(掃除 英語の勉強 ランニング).each.with_index do |list,i| %>
+    <% %w(バンドの練習 英語の勉強 ランニング).each.with_index do |list,i| %>
       <%if @todo
       flag=0
       @todo.each do |j|
@@ -26,23 +28,138 @@
     </label>
     <% end %>
   </div>
-  <%=@todo%>
-  <input type="submit" id="sub"   value="決定">
+  <%#= @todo%>
+  <input type="submit" id="sub"   value="更新"  disabled="disabled">
 </form>
+<div id="result"></div>
+<%# /* function syori(){
+*   var x;
+*   x = document.getElementById("sub");
+
+*   x.disabled = "";
+* }
+* var x;
+* x = document.getElementById("sub");
+
+* x.disabled = "disabled";*/ %>
+
 
 <script>
- window.onload = function(){
-   setTimeout("syori()", 3000);
+ window.onload=getPosition();
+ /* window.onload=document.getElementById("sub").disabled = "disabled";*/
+ var distance;
+ var syncerWatchPosition = {
+   count: 0 ,
+   lastTime: 0 ,
+   map: null ,
+   marker: null ,
+ } ;
+
+ var optionObj = {
+   "enableHighAccuracy": true ,
+   "timeout": 1000000 ,
+   "maximumAge": 0 ,
+ } ;
+ // Geolocation APIに対応している
+ if (navigator.geolocation) {
+   /* alert("この端末では位置情報が取得できます");*/
+   // Geolocation APIに対応していない
+ } else {
+   alert("この端末では位置情報が取得できません");
  }
 
- function syori(){
-   var x;
-   x = document.getElementById("sub");
+ // 現在地取得処理
+ function getPosition() {
+   // 現在地を取得
+   navigator.geolocation.watchPosition(
+     // 取得成功した場合
+     function(position) {
+       // データの更新
+       ++syncerWatchPosition.count ;					// 処理回数
+       var nowTime = ~~( new Date() / 1000 ) ;	// UNIX Timestamp
 
-   x.disabled = "";
+       // 前回の書き出しから3秒以上経過していたら描写
+       // 毎回HTMLに書き出していると、ブラウザがフリーズするため
+       if( (syncerWatchPosition.lastTime + 1) > nowTime )
+	     {
+	       return false ;
+	     }
+
+       // 前回の時間を更新
+       syncerWatchPosition.lastTime = nowTime ;
+
+       // HTMLに書き出し
+       document.getElementById( 'result' ).innerHTML = '<dt>緯度</dt><dd>' + position.coords.latitude + '</dd><dt>経度</dt><dd>' + position.coords.longitude + '</dd><dt>高度</dt><dd>' + position.coords.altitude + '</dd><dt>速度</dt><dd>' + position.coords.speed + '</dd><dt>実行回数</dt><dd>' + syncerWatchPosition.count + '回</dd>' ;
+
+
+       /* alert('緯度'+position.coords.latitude +'経度'+ position.coords.longitude);*/
+       var x=position.coords.latitude;
+       var y=position.coords.longitude;
+       var xd=36.110189399999996;
+       var yd=140.100774;
+       distance = getDistance(x,y,xd,yd);
+       if(distance <= 0.005){
+         var x;
+         x = document.getElementById("sub");
+         x.disabled = "";
+       }
+       else{
+         var x;
+         x = document.getElementById("sub");
+         x.disabled = "disabled";
+       }
+
+     },
+     // 取得失敗した場合
+     function(error) {
+       switch(error.code) {
+         case 1: //PERMISSION_DENIED
+           alert("位置情報の利用が許可されていません");
+           break;
+         case 2: //POSITION_UNAVAILABLE
+           alert("現在位置が取得できませんでした");
+           break;
+         case 3: //TIMEOUT
+           alert("タイムアウトになりました");
+           break;
+         default:
+           alert("その他のエラー(エラーコード:"+error.code+")");
+           break;
+       }
+     },
+     optionObj
+   );
  }
- var x;
- x = document.getElementById("sub");
 
- x.disabled = "disabled";
+ function getDistance(lat1, lng1, lat2, lng2){
+
+   var x1 =parseFloat(lat1) * Math.PI / 180;
+   var y1 =parseFloat(lng1) * Math.PI / 180;
+   var x2 =parseFloat(lat2)* Math.PI / 180;
+   var y2 =parseFloat(lng2) * Math.PI / 180;
+
+
+   var radius = 6378.137;
+
+
+   var diff_y = Math.abs(y1 - y2);
+
+   var calc1 = Math.cos(x2) * Math.sin(diff_y);
+   var calc2 = Math.cos(x1) * Math.sin(x2) - Math.sin(x1) * Math.cos(x2) * Math.cos(diff_y);
+
+
+   var numerator = Math.sqrt(calc1 ** 2 + calc2 ** 2)
+
+
+   var denominator = Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2) * Math.cos(diff_y);
+
+
+   var degree = Math.atan2(numerator, denominator);
+
+
+   return degree * radius;
+ }
+
+
+
 </script>
