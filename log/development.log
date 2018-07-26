@@ -2907,3 +2907,4 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 36ms (Views: 25.0ms | ActiveRecord: 0.0ms)
 
 
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
