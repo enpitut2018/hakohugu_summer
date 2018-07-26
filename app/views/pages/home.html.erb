@@ -88,8 +88,7 @@
        // 前回の時間を更新
        syncerWatchPosition.lastTime = nowTime ;
 
-       // HTMLに書き出し
-       document.getElementById( 'result' ).innerHTML = '<dt>緯度</dt><dd>' + position.coords.latitude + '</dd><dt>経度</dt><dd>' + position.coords.longitude + '</dd><dt>高度</dt><dd>' + position.coords.altitude + '</dd><dt>速度</dt><dd>' + position.coords.speed + '</dd><dt>実行回数</dt><dd>' + syncerWatchPosition.count + '回</dd>' ;
+
 
 
        /* alert('緯度'+position.coords.latitude +'経度'+ position.coords.longitude);*/
@@ -108,7 +107,8 @@
          x = document.getElementById("sub");
          x.disabled = "disabled";
        }
-
+       // HTMLに書き出し
+       document.getElementById( 'result' ).innerHTML = '<dt>緯度</dt><dd>' + position.coords.latitude + '</dd><dt>経度</dt><dd>' + position.coords.longitude + '</dd><dt>高度</dt><dd>' + position.coords.altitude + '</dd><dt>速度</dt><dd>' + position.coords.speed + '</dd><dt>実行回数</dt><dd>' + syncerWatchPosition.count + '回' + '</dd><dt>距離(km)</dt><dd>' + distance + '</dd>';
      },
      // 取得失敗した場合
      function(error) {
