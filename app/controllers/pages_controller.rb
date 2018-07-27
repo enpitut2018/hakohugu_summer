@@ -3,13 +3,17 @@ class PagesController < ApplicationController
 	  if params[:todo]
 		 @todo=params["todo"]
 	  end
-
-	  target = User.find(2)
+	  userid = params['userid']
+	  if userid == 1
+		 target = User.find(2)
+	  else
+		 target = User.find(1)
+	  end
 	  latitude= target.latitude
 	  longitude=target.longitude
 	  gon.latitude=latitude
 	  gon.longitude=longitude
-
+	  gon.userid = userid
    end
 
    def home
