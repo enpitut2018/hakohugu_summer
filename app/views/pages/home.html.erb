@@ -1,5 +1,6 @@
 <h1>CoMony</h1>
 <h3>ToDoリスト</h3>
+<p>完了したタスクにチェックを入れましょう</p>
 <form action="/pages/home" method="get">
   <div class="field">
     <% %w(バンドの練習 英語の勉強 ランニング).each.with_index do |list,i| %>
@@ -29,8 +30,9 @@
     <% end %>
   </div>
   <%#= @todo%>
-  <input type="submit" id="sub"   value="更新"  disabled="disabled">
+  <input type="submit" id="sub"   value="チェックしたタスクを完了する"  disabled="disabled">
 </form>
+<p>一緒に作業する仲間との距離が近くなると上の完了ボタンを押せるようになります。</p>
 <div id="result"></div>
 <%# /* function syori(){
 *   var x;
@@ -108,7 +110,11 @@
          x.disabled = "disabled";
        }
        // HTMLに書き出し
-       document.getElementById( 'result' ).innerHTML = '<dt>緯度</dt><dd>' + position.coords.latitude + '</dd><dt>経度</dt><dd>' + position.coords.longitude + '</dd><dt>高度</dt><dd>' + position.coords.altitude + '</dd><dt>速度</dt><dd>' + position.coords.speed + '</dd><dt>実行回数</dt><dd>' + syncerWatchPosition.count + '回' + '</dd><dt>距離(km)</dt><dd>' + distance + '</dd>';
+		      /*document.getElementById( 'result' ).innerHTML = '<dt>緯度</dt><dd>' + position.coords.latitude + '</dd><dt>経度</dt><dd>' + position.coords.longitude + '</dd><dt>高度</dt><dd>' + position.coords.altitude + '</dd><dt>速度</dt><dd>' + position.coords.speed + '</dd><dt>実行回数</dt><dd>' + syncerWatchPosition.count + '回' + '</dd><dt>距離(km)</dt><dd>' + distance + '</dd>';*/
+
+		      
+		      document.getElementById( 'result' ).innerHTML = '<dt>距離(km)</dt><dd>' + distance + '</dd>';
+		      
      },
      // 取得失敗した場合
      function(error) {
