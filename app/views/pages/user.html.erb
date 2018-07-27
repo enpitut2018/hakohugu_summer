@@ -111,37 +111,38 @@
             console.log(data);
           })
          // Ajaxリクエストが成功・失敗どちらでも発動
-          .always( (data) => {
+  .always( (data) => {
 
-          });
-       });
-
-
-       if(distance <= 0.005){
-         var x;
-         x = document.getElementById("sub");
-         x.disabled = "";
-       }
-       else{
-         var x;
-         x = document.getElementById("sub");
-         x.disabled = "disabled";
-       }
-       // HTMLに書き出し
-       document.getElementById( 'result' ).innerHTML = '<dt>距離(km)</dt><dd>' + distance + '</dd>';
+  });
+  });
 
 
+  if(distance <= 0.005){
+  var x;
+  x = document.getElementById("sub");
+  x.disabled = "";
+  }
+  else{
+  var x;
+  x = document.getElementById("sub");
+  x.disabled = "disabled";
+  }
 
-     },
-     // 取得失敗した場合
-     function(error) {
-       switch(error.code) {
-         case 1: //PERMISSION_DENIED
-           alert("位置情報の利用が許可されていません");
-           break;
-         case 2: //POSITION_UNAVAILABLE
-           alert("現在位置が取得できませんでした");
-           break;
+  /*document.getElementById( 'result' ).innerHTML = '<dt>緯度</dt><dd>' + position.coords.latitude + '</dd><dt>経度</dt><dd>' + position.coords.longitude + '</dd><dt>高度</dt><dd>' + position.coords.altitude + '</dd><dt>速度</dt><dd>' + position.coords.speed + '</dd><dt>実行回数</dt><dd>' + syncerWatchPosition.count + '回' + '</dd><dt>距離(km)</dt><dd>' + distance + '</dd>';*/
+
+
+  document.getElementById( 'result' ).innerHTML = '<dt>距離(km)</dt><dd>' + distance + '</dd>';
+
+  },
+  // 取得失敗した場合
+  function(error) {
+  switch(error.code) {
+  case 1: //PERMISSION_DENIED
+  alert("位置情報の利用が許可されていません");
+  break;
+  case 2: //POSITION_UNAVAILABLE
+  alert("現在位置が取得できませんでした");
+  break;
          case 3: //TIMEOUT
            alert("タイムアウトになりました");
            break;
